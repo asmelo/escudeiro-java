@@ -1,4 +1,4 @@
-package com.company.questao3;
+package com.db1.questao3;
 
 public class Main {
 
