@@ -13,11 +13,20 @@ javac Main.java
 java com.db1.questao3.Main
 
 **Qual é a estrutura miníma de uma classe Java**
-
-
-
+```
+class Main {
+}
+```
 **O que é o método main e qual a sua importância**
 
-
+O método main é o ponto de início de uma aplicação Java, trata-se de um método 
+necessariamente público e estático, não possui um retorno e recebe como parâmetro
+um array de String que correspondem aos argumentos que podem ser passados via
+linha de comando. 
 
 **O que é e em que momento da resolução da questão foi gerado o BYTECODE**
+
+O Bytecode (.class) é gerado na compilação do código fonte (.java), trata-se de 
+um código não compreensível para os seres humanos mas que serve de entrada para
+a JVM que irá traduzi-lo para instruções específicas do sistema operacional e 
+hardware utilizado. 
