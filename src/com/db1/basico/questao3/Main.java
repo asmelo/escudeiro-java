@@ -1,4 +1,4 @@
-package com.db1.questao3;
+package com.db1.basico.questao3;
 
 public class Main {
 

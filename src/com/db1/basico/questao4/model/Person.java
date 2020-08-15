@@ -1,4 +1,4 @@
-package com.db1.questao4.model;
+package com.db1.basico.questao4.model;
 
 public class Person {
 

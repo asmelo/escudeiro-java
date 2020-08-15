@@ -10,7 +10,7 @@ javac Main.java
 
 **O comando que você usou para executar**
 
-java com.db1.questao3.Main
+java com.db1.basico.questao3.Main
 
 **Qual é a estrutura miníma de uma classe Java**
 ```

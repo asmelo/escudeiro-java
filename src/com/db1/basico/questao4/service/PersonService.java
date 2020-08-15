@@ -1,10 +1,9 @@
-package com.db1.questao4.service;
+package com.db1.basico.questao4.service;
 
-import com.db1.questao4.model.Person;
+import com.db1.basico.questao4.model.Person;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringJoiner;
 
 public class PersonService {
 
