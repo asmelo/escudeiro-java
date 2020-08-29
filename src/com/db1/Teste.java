@@ -30,6 +30,11 @@ public class Teste {
             System.out.println("A lista não possui o inteiro " + int3);
         }
 
+        Service service = new Service();
+
+        System.out.println("UserCode: " + Service.USER_CODE);
+        System.out.println("Brand: " + Service.BRAND);
+        service.variableTest();
 
     }
 
