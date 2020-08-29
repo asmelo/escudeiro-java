@@ -5,8 +5,12 @@ import com.db1.basico.questao4.service.PersonService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringJoiner;
 
 public class Teste {
+
+    private final static String PREFIX = "[";
+    private final static String SUFFIX = "]";
 
     public static void main(String[] args) {
         System.out.println("Hello World 3!!");
@@ -35,6 +39,13 @@ public class Teste {
         System.out.println("UserCode: " + Service.USER_CODE);
         System.out.println("Brand: " + Service.BRAND);
         service.variableTest();
+
+        StringJoiner joiner = new StringJoiner(", ", PREFIX, SUFFIX);
+        joiner.add("Maçã")
+                .add("Pera")
+                .add("Uva");
+
+        System.out.println(joiner.toString()); //Irá imprimir "[Maça, Pera, Uva]"
 
     }
 
