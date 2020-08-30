@@ -47,6 +47,21 @@ public class Teste {
 
         System.out.println(joiner.toString()); //Irá imprimir "[Maça, Pera, Uva]"
 
+        String instrumento = "Violão";
+        System.out.println(instrumento.charAt(2));
+
+        StringBuffer stringBuffer = new StringBuffer("Violão");
+        stringBuffer.insert(2, "ooo");
+        System.out.println(stringBuffer);
+
+        StringBuilder stringBuilder = new StringBuilder("Violão");
+        stringBuilder.insert(2, "ooo");
+        System.out.println(stringBuilder);
+
+        service.stringTest();
+
     }
+
+
 
 }

@@ -76,4 +76,51 @@ System.out.println(stringConcatenada); // Irá imprimir "O salário do profissio
 é 10000.00. Está no padrão Alto"
 ```
 
+**Quais os principais comportamentos de uma String**
+A classe String é imutável, uma vez que uma sequência de caracateres seja atribuida a uma instância
+de uma classe String esta não pode mais ser modificada. Sempre que um novo valor é atribuido
+a uma instância de String um novo objeto é criado. Por ser imutável uma String pode ser
+compartilhada de forma segura já que uma nova instância é criada e não irá interferir na 
+instância original. Todas as string literais como "Exemplo de string literal" são implementadas
+como instâncias da classe String.
+
+**Como trabalhamos com String utilizando as classes StringBuilder e StringBuffer, pontuando
+ a diferença entre elas e qual a importância de usá-las**;
+ 
+Ao contrário da classe String com as classes StringBuffer ou StringBuilder podemos trabalhar
+com sequência de caracteres mutáveis. 
+ 
+
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+
+
+The String class represents character strings. All string literals in Java programs, such as "abc", are implemented as instances of this class.
+Strings are constant; their values cannot be changed after they are created. String buffers support mutable strings. Because String objects are immutable they can be shared. For example:
+
+     String str = "abc";
+ 
+is equivalent to:
+
+     char data[] = {'a', 'b', 'c'};
+     String str = new String(data);
+ 
+Here are some more examples of how strings can be used:
+
+     System.out.println("abc");
+     String cde = "cde";
+     System.out.println("abc" + cde);
+     String c = "abc".substring(2,3);
+     String d = cde.substring(1, 2);
+ 
+The class String includes methods for examining individual characters of the sequence, for comparing strings, for searching strings, for extracting substrings, and for creating a copy of a string with all characters translated to uppercase or to lowercase. Case mapping is based on the Unicode Standard version specified by the Character class.
+
+The Java language provides special support for the string concatenation operator ( + ), and for conversion of other objects to strings. String concatenation is implemented through the StringBuilder(or StringBuffer) class and its append method. String conversions are implemented through the method toString, defined by Object and inherited by all classes in Java. For additional information on string concatenation and conversion, see Gosling, Joy, and Steele, The Java Language Specification.
+
+Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a NullPointerException to be thrown.
+
+A String represents a string in the UTF-16 format in which supplementary characters are represented by surrogate pairs (see the section Unicode Character Representations in the Character class for more information). Index values refer to char code units, so a supplementary character uses two positions in a String.
+
+The String class provides methods for dealing with Unicode code points (i.e., characters), in addition to those for dealing with Unicode code units (i.e., char values).
+
 
