@@ -77,6 +77,7 @@ System.out.println(stringConcatenada); // Irá imprimir "O salário do profissio
 ```
 
 **Quais os principais comportamentos de uma String**
+
 A classe String é imutável, uma vez que uma sequência de caracateres seja atribuida a uma instância
 de uma classe String esta não pode mais ser modificada. Sempre que um novo valor é atribuido
 a uma instância de String um novo objeto é criado. Por ser imutável uma String pode ser
@@ -88,39 +89,66 @@ como instâncias da classe String.
  a diferença entre elas e qual a importância de usá-las**;
  
 Ao contrário da classe String com as classes StringBuffer ou StringBuilder podemos trabalhar
-com sequência de caracteres mutáveis. 
+com sequência de caracteres mutáveis. É possível atribuir uma string e depois mudar seu valor sem
+que um novo objeto seja instanciado. A StringBuffer é indicada para o uso com múltiplas threads
+pois seus métodos são sincronizados e a ordem de execução dos seus métodos é garantida de acordo
+com a ordem em que cada um deles foi invocado pela diversas threads. Já a classe StringBuild 
+possui os mesmos métodos da StringBuffer mas não realiza sincronização, portanto não é indicada
+para trabalhar com múltiplas threads. Em cenários de uma única thread é preferível utilizar a
+StringBuilder já que é mais eficiente por não realizar a sincronização.
  
 
+**Como transformamos String em outro tipo de dado**
 
-https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+Todos os wrappers possuem métodos que possibilitam a conversão do seu valor primitivo em String. 
+Por exemplo o wrapper Integer possui os métodos parseInt e valueOf, o Long possui os métodos 
+parseLong e valueOf, o Double possui o parseDouble e valueOf e o Boolean possui o parseBoolean
+e o valueOf. Segue alguns exemplos de conversão utizando esses métodos:
 
+```
+//Converter String para int
+int valInt = Integer.parseInt("1")
+int valInt = Integer.valueOf("1")
+```  
 
-The String class represents character strings. All string literals in Java programs, such as "abc", are implemented as instances of this class.
-Strings are constant; their values cannot be changed after they are created. String buffers support mutable strings. Because String objects are immutable they can be shared. For example:
+```
+//Converter String para long
+long valLong = Long.parseLong("1")
+long valLong = Long.valueOf("1")
+```  
 
-     String str = "abc";
- 
-is equivalent to:
+```
+//Converter String para double
+double valDouble = Double.parseDouble("1")
+double valDouble = Double.valueOf("1")
+```
 
-     char data[] = {'a', 'b', 'c'};
-     String str = new String(data);
- 
-Here are some more examples of how strings can be used:
+```
+//Converter String para boolean
+boolean valDBoolean = Boolean.parseBoolean(true)
+boolean valBoolean = Boolean.valueOf(true)
+```
 
-     System.out.println("abc");
-     String cde = "cde";
-     System.out.println("abc" + cde);
-     String c = "abc".substring(2,3);
-     String d = cde.substring(1, 2);
- 
-The class String includes methods for examining individual characters of the sequence, for comparing strings, for searching strings, for extracting substrings, and for creating a copy of a string with all characters translated to uppercase or to lowercase. Case mapping is based on the Unicode Standard version specified by the Character class.
+**Como podemos transformar qualquer tipo de dado em uma String.**
 
-The Java language provides special support for the string concatenation operator ( + ), and for conversion of other objects to strings. String concatenation is implemented through the StringBuilder(or StringBuffer) class and its append method. String conversions are implemented through the method toString, defined by Object and inherited by all classes in Java. For additional information on string concatenation and conversion, see Gosling, Joy, and Steele, The Java Language Specification.
+Todas as classes do Java herdam da classe Object, esta por sua vez possui o método toString 
+que gera a representação de string da instância do objeto. Sendo assim podemos converter
+qualquer classe em uma classe String utilizando este método. Por exemplo: 
 
-Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a NullPointerException to be thrown.
+```
+//Converter Integer para String
+Integer valInt = 3;
+String valString = valInt.toString();
+```
 
-A String represents a string in the UTF-16 format in which supplementary characters are represented by surrogate pairs (see the section Unicode Character Representations in the Character class for more information). Index values refer to char code units, so a supplementary character uses two positions in a String.
+```
+//Converter Long para String
+Long valLong = 3l;
+String valString = valLong.toString();
+```
 
-The String class provides methods for dealing with Unicode code points (i.e., characters), in addition to those for dealing with Unicode code units (i.e., char values).
-
-
+```
+//Converter Boolean para String
+Boolean valBoolean = true;
+String valString = valBoolean.toString();
+```

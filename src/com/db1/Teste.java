@@ -1,8 +1,6 @@
 package com.db1;
 
-import com.db1.basico.questao4.model.Person;
-import com.db1.basico.questao4.service.PersonService;
-
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringJoiner;
@@ -59,6 +57,23 @@ public class Teste {
         System.out.println(stringBuilder);
 
         service.stringTest();
+
+        Integer valInt = 3;
+        //String valString = valInt.toString();
+
+        Boolean valBoolean = true;
+        String valString = valBoolean.toString();
+
+        BigDecimal bdFromDouble = new BigDecimal(0.1d);
+        System.out.println(bdFromDouble);
+
+        BigDecimal bdFromDouble2 = BigDecimal.valueOf(0.1d);
+        System.out.println(bdFromDouble2);
+
+        Long valLong = 2l;
+
+
+
 
     }
 
