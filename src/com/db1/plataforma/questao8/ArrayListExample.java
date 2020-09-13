@@ -34,7 +34,7 @@ public class ArrayListExample {
 
         StringJoiner stringJoiner = new StringJoiner(", ", "[", "]");
 
-        walletBanknotes.stream().forEach(stringJoiner::add);
+        walletBanknotes.forEach(stringJoiner::add);
 
         //Ao listar os elementos do ArrayList podemos verificar a duplicação dos elementos é permitida.
         System.out.println("Notas presentes na carteira: " + stringJoiner.toString());

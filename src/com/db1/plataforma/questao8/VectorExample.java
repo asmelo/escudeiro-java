@@ -31,7 +31,7 @@ public class VectorExample {
         walletBanknotes.add("50  reais");
 
         StringJoiner stringJoiner = new StringJoiner(", ", "[", "]");
-        walletBanknotes.stream().forEach(stringJoiner::add);
+        walletBanknotes.forEach(stringJoiner::add);
 
         //Ao listar os elementos do Vector podemos verificar que a duplicação dos elementos é permitida.
         System.out.println("Notas presentes na carteira: " + stringJoiner.toString());

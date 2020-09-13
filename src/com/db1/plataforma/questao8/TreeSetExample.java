@@ -9,15 +9,16 @@ public class TreeSetExample {
 
     public static void main(String[] args) {
 
-        //O TreeSet implementa a interface NavigableSet com base em um TreeMap que por sua vez utiliza a árvore rubro-negra em sua implementação.
-        //Desta forma o TreeSet mantém seus elementos ordenados automaticamente de acordo com sua ordenação natural (implementando a interface Comparable) ou pelo
-        //Comparator definido na sua construção. Ao contrário do LinkedHashSet a ordenação do TreeSet basea-se na comparação dos seus elementos e não na inserção dos mesmos na coleção.
-        //Por garantir tal ordenação o TreeSet possui uma performance de O(log(n)) na execução dos métodos add, remove e contains.
-        //Assim como o hashSet a implementação do TreeSet também não é sincronizada.
+        /*
+        O TreeSet implementa a interface NavigableSet com base em um TreeMap que por sua vez utiliza a árvore rubro-negra em sua implementação.
+        Desta forma o TreeSet mantém seus elementos ordenados automaticamente de acordo com sua ordenação natural (implementando a interface Comparable) ou pelo
+        Comparator definido na sua construção. Ao contrário do LinkedHashSet a ordenação do TreeSet basea-se na comparação dos seus elementos e não na inserção dos mesmos na coleção.
+        Por garantir tal ordenação o TreeSet possui uma performance de O(log(n)) na execução dos métodos add, remove e contains.
+        Assim como o hashSet a implementação do TreeSet também não é sincronizada.
 
-        //Portanto devemos usar o TreeSet quando não puder existir elementos duplicados, quando a ordenação dos elementos for necessária e quando o custo de O(log(n)) for suficiente
-        //para a manipulação dos elementos.
-
+        Portanto devemos usar o TreeSet quando não puder existir elementos duplicados, quando a ordenação dos elementos for necessária e quando o custo de O(log(n)) for suficiente
+        para a manipulação dos elementos.
+        */
 
         //Exemplo de uso do TreeSet onde os elementos serão ordenados de acordo com a ordenação natual do objeto String.
         //A classe String possui ordenação natural pois implementa a classe Comparable e possui o método compareTo.

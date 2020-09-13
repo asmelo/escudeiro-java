@@ -10,7 +10,7 @@ public class LinkedHashSetExample {
 
         //Diferente do HashSet o LinkedHashSet implementa a interface Set utilizando uma tabela hash e uma "linked list" que irá conter a ordem de inserção dos elementos.
         //Por utilizar uma tabela hash o LinkedHashSet também oferece uma performance constante (O(1)) na execução dos métodos add, remove, contains e size, contudo sua performance
-        //é inferior ao HasSet por conta do controle da ordenação dos elementos. Em relação ao TreeSet o LinkedHashMap possui uma performance muito maior na manipulação dos seus elementos.
+        //é inferior ao HasSet por conta do controle da ordenação dos elementos. Em relação ao TreeSet o LinkedHashSet possui uma performance muito maior na manipulação dos seus elementos.
         //Assim como o hashSet a implementação do LinkedHashSet também não é sincronizada.
 
         //Portanto devemos usar o LinkedHashSet quando não puder existir elementos duplicados, quando a ordem de inserção dos elementos for importante e quando uma alta performace na
