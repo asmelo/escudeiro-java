@@ -1,4 +1,4 @@
-package com.db1.plataforma.questao10.modifiierExamples.service;
+package com.db1.plataforma.questao10.modifiier_examples.service;
 
 public class Person {
 
@@ -30,6 +30,14 @@ public class Person {
 
     public String getName() {
         return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getEmployment() {
+        return employment;
     }
 
     @Override

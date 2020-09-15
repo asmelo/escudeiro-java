@@ -1,6 +1,6 @@
-package com.db1.plataforma.questao10.modifiierExamples;
+package com.db1.plataforma.questao10.modifiier_examples;
 
-import com.db1.plataforma.questao10.modifiierExamples.service.Person;
+import com.db1.plataforma.questao10.modifiier_examples.service.Person;
 
 public class ModifierExamples {
 

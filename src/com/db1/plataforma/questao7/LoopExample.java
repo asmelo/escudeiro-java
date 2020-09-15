@@ -59,7 +59,7 @@ public class LoopExample {
 
 
         //Exemplo de uso do break
-        //Neste exemplo temos um laço cuja expressão lógica é sempre verdadeira, para finaliza o laço é utilizando
+        //Neste exemplo temos um laço cuja expressão lógica é sempre verdadeira, para finalizar o laço é utilizando
         //o comando break que força a interrupção do laço, independente da expressão lógica.
         Double number, sum = 0.0;
         Scanner input = new Scanner(System.in);

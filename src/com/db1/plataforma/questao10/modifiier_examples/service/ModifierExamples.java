@@ -1,4 +1,4 @@
-package com.db1.plataforma.questao10.modifiierExamples.service;
+package com.db1.plataforma.questao10.modifiier_examples.service;
 
 public class ModifierExamples {
 

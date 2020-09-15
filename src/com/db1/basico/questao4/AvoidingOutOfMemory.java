@@ -7,9 +7,11 @@ import java.util.List;
 
 public class AvoidingOutOfMemory {
 
-    //Uma forma de evitar consultar de dados e carregar em memória é criar um esquema de paginação, onde
-    //a cada requisição é passado como parâmetro uma página e o tamanho da página, evitando assim carregar
-    //todos os dados de uma só vez.
+    /*
+    Uma forma de evitar consultar de dados e carregar em memória é criar um esquema de paginação, onde
+    a cada requisição é passado como parâmetro uma página e o tamanho da página, evitando assim carregar
+    todos os dados de uma só vez.
+     */
     public static void main(String[] args) {
         PersonService personService = new PersonService();
         List<Person> page1 = personService.findAll(0, 5);

@@ -60,7 +60,7 @@ public class BigDecimalArithmeticOps {
 
     }
 
-    private static void calculateTotal(BigDecimal productPrice, int productQuantity, BigDecimal discountRate, BigDecimal taxRate, int paymentPortion, MathContext mathContext) {
+    public static void calculateTotal(BigDecimal productPrice, int productQuantity, BigDecimal discountRate, BigDecimal taxRate, int paymentPortion, MathContext mathContext) {
         BigDecimal amount = productPrice.multiply(BigDecimal.valueOf(productQuantity), mathContext);
         BigDecimal discountAmount = amount.multiply(discountRate, mathContext);
         BigDecimal amountDiscounted = amount.subtract(discountAmount, mathContext);
@@ -74,7 +74,7 @@ public class BigDecimalArithmeticOps {
         System.out.println("Valor da parcela: " + portionValue.setScale(2, mathContext.getRoundingMode()));
     }
 
-    private static void bigDecimalPowExample(BigDecimal decimalValue) {
+    public static void bigDecimalPowExample(BigDecimal decimalValue) {
         //Para calcular a potência de um BigDecimal basta executar o método pow passando como parâmetro o valor da potência
         //e a precisão e método de arredondamento atraves de um MathContext.
         BigDecimal powValue = decimalValue.pow(4, new MathContext(16, RoundingMode.HALF_UP));
