@@ -30,3 +30,6 @@ O Bytecode (.class) é gerado na compilação do código fonte (.java), trata-se
 um código não compreensível para os seres humanos mas que serve de entrada para
 a JVM que irá traduzi-lo para instruções específicas do sistema operacional e 
 hardware utilizado. 
+
+
+[Retornar ao Sumário](../../../../../../../README.md)

@@ -19,3 +19,6 @@ parte do conteúdo da web era estático. Com o lançamento do Java Developer's K
 significativas para aplicações gráficas e distribuídas. Sua independência de
 plataforma possibilitou que as aplicações Java pudessem ser utilizadas em Windows,
 Mac, smartphones, sistemas embarcados, aparelhos blu-ray player e TVs
+
+
+[Retornar ao Sumário](../../../../../../../README.md)

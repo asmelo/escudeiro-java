@@ -150,3 +150,5 @@ grande array com números decimais é indicado o uso de float, caso não seja ne
 
 **boolean**: O boolean armazena apenas os valores lógicos true e false. Ele é utilizado para representar flags ou
 construir expressões lógicas. Por exemplo o a informação "Registro ativo" pode ser do tipo boolean.
+
+[Retornar ao Sumário](../../../../../../../README.md)

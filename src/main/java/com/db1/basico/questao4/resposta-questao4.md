@@ -29,3 +29,6 @@ da memória heap (-Xmx<N>), o tempo máximo entre a execução de duas Collectio
 (-XX:MaxGCPauseMillis=<N>) ou o número de threads para execução da Collection 
 (-XX:ParallelGCThreads=<N>). Tais parâmetros podem afetar de forma sensível a performance das
 aplicações em produção.
+
+
+[Retornar ao Sumário](../../../../../../../README.md)
