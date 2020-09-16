@@ -12,6 +12,9 @@ O Básico do Java
  - [Resolução da Questão 3](src/main/java/com/db1/basico/questao3/resposta-questao3.md)
  - [Resolução da Questão 4](src/main/java/com/db1/basico/questao4/resposta-questao4.md)
  
- Conhecendo a Plataforma
-  - [Resolução da Questão 1](src/main/java/com/db1/plataforma/questao1/resposta-questao-1.md)
+Conhecendo a Plataforma
+ - [Resolução da Questão 1](src/main/java/com/db1/plataforma/questao1/resposta-questao-1.md)
+ - [Resolução da Questão 2](src/main/java/com/db1/plataforma/questao2/resposta-questao2.md)
+ - [Resolução da Questão 3](src/main/java/com/db1/plataforma/questao3/resposta-questao3.md)
+ - [Resolução da Questão 4](src/main/java/com/db1/plataforma/questao4/resposta-questao4.md)
  
