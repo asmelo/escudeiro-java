@@ -1,5 +1,6 @@
 package com.db1.plataforma.questao10;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class MethodWithoutArgumentsAndReturnValueExample {
@@ -7,8 +8,8 @@ public class MethodWithoutArgumentsAndReturnValueExample {
     public static void main(String[] args) {
         OutSystem outSystem = new OutSystem();
 
-        List<String> names = List.of("Carlos", "Maria", "Pedro", "Cristina");
-        List<Integer> numbers = List.of(2, 4, 7, 10);
+        List<String> names = Arrays.asList("Carlos", "Maria", "Pedro", "Cristina");
+        List<Integer> numbers = Arrays.asList(2, 4, 7, 10);
 
         outSystem.printList(names);
         outSystem.printLine();

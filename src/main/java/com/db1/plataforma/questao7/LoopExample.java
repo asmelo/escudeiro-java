@@ -1,6 +1,7 @@
 package com.db1.plataforma.questao7;
 
 import javax.swing.plaf.IconUIResource;
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class LoopExample {
@@ -53,7 +54,7 @@ public class LoopExample {
 
         //Exemplo do forEach do Interable
         stringJoiner = new StringJoiner(", ", "[", "]");
-        List<String> cars = List.of("Gol", "Ka", "Sentra", "Siena", "Golf");
+        List<String> cars = Arrays.asList("Gol", "Ka", "Sentra", "Siena", "Golf");
         cars.forEach(stringJoiner::add);
         System.out.println("\nLista de carros: " + stringJoiner.toString());
 

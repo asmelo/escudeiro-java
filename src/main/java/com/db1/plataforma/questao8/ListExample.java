@@ -1,6 +1,7 @@
 package com.db1.plataforma.questao8;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ListExample {
@@ -12,7 +13,7 @@ public class ListExample {
 
         //Exemplos de uso dos métodos declarados na interface List
 
-        List<String> everydayVisitedNeighborhood = List.of("Bairro onde almoça", "Bairro onde janta");
+        List<String> everydayVisitedNeighborhood = Arrays.asList("Bairro onde almoça", "Bairro onde janta");
         List<String> visitedNeighborhood = new ArrayList<>();
         visitedNeighborhood.add("Bairro onde mora");
 

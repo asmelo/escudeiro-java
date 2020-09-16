@@ -1,5 +1,6 @@
 package com.db1.plataforma.questao12.custom_exception;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -26,7 +27,7 @@ public class CustomExceptionExample {
     }
 
     public static void validateSuit(String suit) throws InvalidCardException {
-        List<String> validSuits = List.of("paus", "espada", "ouro", "copas");
+        List<String> validSuits = Arrays.asList("paus", "espada", "ouro", "copas");
 
         if (!validSuits.contains(suit.toLowerCase())) {
             throw new InvalidCardException("Naipe inválido");
@@ -36,7 +37,7 @@ public class CustomExceptionExample {
     }
 
     public static void validateCardValue(String value) throws InvalidCardException {
-        List<String> validCardValues = List.of("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "j", "q", "k");
+        List<String> validCardValues = Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "j", "q", "k");
 
         if (!validCardValues.contains(value.toLowerCase())) {
             throw new InvalidCardException("Valor da carta inválido");

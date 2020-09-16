@@ -1,10 +1,11 @@
 package com.db1.plataforma.questao12;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 public class ExceptionExamples {
 
