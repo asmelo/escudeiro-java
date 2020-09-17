@@ -2,7 +2,9 @@
 
 <h3>Colaborador: Alexandre Simões de Melo</h3>
 
-Projeto com resolução das questões propostas pelo programa Mestre dos Código na categoria Java Escudeiro da empresa DB1 Global Software  
+Projeto com resolução das questões propostas pelo programa Mestre dos Código na categoria Java Escudeiro da empresa DB1 Global Software
+
+Obs.: Para melhor avaliação das resposta recomenda-se executar os algoritmos em alguma IDE afim de visualizar suas saídas.  
 
 <h3>Sumário</h3>
 
@@ -29,6 +31,6 @@ Conhecendo a Plataforma
  
 Vamos praticar
 
- - [Resolução da Questão_Prática](src/main/java/com/db1/pratica/resposta-questao-pratica.md)
+ - [Resolução da Questão Prática](src/main/java/com/db1/pratica/resposta-questao-pratica.md)
 
  

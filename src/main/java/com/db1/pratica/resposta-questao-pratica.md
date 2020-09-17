@@ -1,4 +1,4 @@
-<h2>Vamos praticar</h2>*
+<h2>Vamos praticar</h2>
 
 *Escolha dois problemas no site Judge e:*
 
