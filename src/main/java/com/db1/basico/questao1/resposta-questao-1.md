@@ -1,3 +1,8 @@
+<h2>O básico do Java - Questão 1</h2>
+*Vamos fazer uma viagem ao passado. O Java foi criado na década de 90. Vamos entender qual foi a motivação da criação da linguagem, seus principais conceitos e características e qual sua importância para o desenvolvimento de software. Faça, então, sua pesquisa e pontue seu entendimento sobre tudo isso.**
+
+<h2>Resposta</h2>
+
 **Motivação da criação da linguagem**
 
 A linguagem Java inicialmente era chamada de OaK e foi criada para possibilitar a

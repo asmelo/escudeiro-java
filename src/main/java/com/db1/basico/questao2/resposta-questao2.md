@@ -1,3 +1,15 @@
+<h2>O básico do Java - Questão 2</h2>
+
+*No mundo Java existe uma sopa de letrinhas e siglas, mas algumas são fundamentais para o entendimento do propósito da linguagem. Vamos, então, aprender um pouco mais sobre a plataforma. Pesquise sobre:*
+
+*JVM*
+*JDK*
+*JRE*
+
+*Pontue o que cada palavra significa, onde e quando usamos e qual a importância de cada uma delas:*
+
+<h2>Resposta</h2>
+
 **JVM**
 
 A JVM (Java Virtual Machine) é uma máquina virtual responsável por interpretar, 

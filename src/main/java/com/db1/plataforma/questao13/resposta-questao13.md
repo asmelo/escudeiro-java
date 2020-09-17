@@ -1,3 +1,13 @@
+<h2>Conhecendo a plataforma - Questão 13</h2>
+
+*A qualidade de um software não pode ser avaliada em um produto já feito. É fundamental que, durante o desenvolvimento, sejam adotadas técnicas para aprimorar a produção. Pesquise sobre testes unitários em Java e:*
+
+ - *Pontue quais frameworks existem atualmente para auxiliar o desenvolvimento de testes unitários no ecossistema Java e a diferença entre eles;*
+ - *Escolha um framework e faça testes unitários para pelo menos três exercícios desenvolvidos anteriormente;*
+ - *Justifique sua escolha de framework e exercícios.*
+
+<h2>Resposta</h2>
+
 **Pontue quais frameworks existem atualmente para auxiliar o desenvolvimento de testes unitários no ecossistema Java e a 
 diferença entre eles;**
 
@@ -65,6 +75,13 @@ extrair partes dos elementos em array como o primeiro elemento do array usando o
 usando o $.[0:3]. Através da expressão $.[?(@.name == 'Pedro')] é possível consultar por um campo específico em todo o JSON.
 Todos esses valores extraídos do JSON podem ser utilizados em asserções.
 
+**Escolha um framework e faça testes unitários para pelo menos três exercícios desenvolvidos anteriormente;**
+
+ - [Testes unitários da questao 4](tests/questao4/BigDecimalArithmeticOpsTest.java)
+ 
+ - [Testes unitários da questao 10](tests/questao10/modifierExamples/service/PersonTest.java)
+ 
+ - [Testes unitários da questao 12](tests/questao12/custom_exception/CustomExceptionExampleTest.java)
 
 **Justifique sua escolha de framework e exercícios.**
 
@@ -76,3 +93,5 @@ simples o Spring Unit não foi selecionado. Para as asserções foram utilizados
 Os exercícios selecionados foram aqueles possuiam métodos bem definidos a fim de testa-los uma vez que são as unidades mais simples
 da classe. O exercício da questão número 12 foi selecionado em especial por possuir muitas possibilidades de acertos e erros,
 todos foram testados usando testes parametrizados.
+
+[Retornar ao Sumário](../../../../../../../README.md)

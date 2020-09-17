@@ -1,3 +1,15 @@
+<h2>Conhecendo a plataforma - Questão 2</h2>
+
+*Qualquer programa de computador precisa manter informações de alguma forma. Assim, as linguagens de programação permitem a criação de variáveis. Pontue:*
+
+*Declaração de variáveis com inicialização implícita;*
+*Declaração de variáveis com inicialização explícita;*
+*Obrigatoriedade de inicialização de variáveis no Java;*
+*Como funciona o escopo de variáveis no Java;*
+*Quando utilizar a palavra reservada final na declaração de uma variável.*
+
+<h2>Resposta</h2>
+
 **Declaração de variáveis com inicialização implícita**
 
 A declaração de variável com inicialização implícita ocorre quando não é informado um valor

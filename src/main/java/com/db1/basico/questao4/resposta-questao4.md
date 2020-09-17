@@ -1,3 +1,9 @@
+<h2>O básico do Java - Questão 4</h2>
+
+*Durante muito tempo, uma das maiores dificuldades na hora de programar era o gerenciamento de memória. Os desenvolvedores eram responsáveis pela sua alocação e liberação manualmente, o que levava a muitos erros e memory leaks. Hoje, em todas as plataformas modernas (incluindo Java), temos gerenciamento de memória automático através de algoritmos de coleta de lixo. Pesquise sobre Garbage Collector e faça uma explanação de como este algoritmo funciona na plataforma Java. Também implemente dois algoritmos em Java: um que exemplifique um possível erro de OutOfMemoryError e outro que mostre os cuidados tomados para não acontecer este tipo de erro durante o desenvolvimento de software.*
+
+<h2>Resposta</h2>
+
 O Java possui gerenciamento automático de alocação e desalocação de memória, 
 esta última é realizada por um processo chamado de Garbage Colletion. Neste 
 processo a memória heap da JVM é analisada a fim de identificar objetos que
@@ -30,5 +36,18 @@ da memória heap (-Xmx<N>), o tempo máximo entre a execução de duas Collectio
 (-XX:ParallelGCThreads=<N>). Tais parâmetros podem afetar de forma sensível a performance das
 aplicações em produção.
 
+**Também implemente dois algoritmos em Java:** 
+
+**Um que exemplifique um possível erro de OutOfMemoryError**
+ 
+  - [Algoritmo exemplificando OutOfMemoryError](OutOfMemoryExample.java)
+ 
+ **Outro que mostre os cuidados tomados para não acontecer este tipo de erro durante o desenvolvimento de software.**
+
+  - [Algoritmo exemplificando como evitar esse tipo de erro](AvoidingOutOfMemory.java)
+ 
+ Classes Auxiliares utilizadas:
+  - [Person](model/Person.java)
+  - [PersonService](service/PersonService.java)
 
 [Retornar ao Sumário](../../../../../../../README.md)

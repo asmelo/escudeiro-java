@@ -1,3 +1,20 @@
+<h2>O básico do Java - Questão 3</h2>
+
+*Para começarmos desenvolver em Java, precisamos de muito pouco. Basta um editor de texto, uma outra coisinha que você aprendeu na questão de número 2 e um terminal. Crie uma classe Java utilizando um editor qualquer. Esta classe deve ter um método main que imprima a frase “Hello World!”, para começarmos com o pé direito esta aventura de programação. Agora faça uma explanação sobre:*
+ 
+* O que você precisou para resolver esta questão;*
+ *O comando que você usou para compilar;*
+ *O comando que você usou para executar;*
+ *Qual é a estrutura miníma de uma classe Java;*
+ *O que é o método main e qual a sua importância;*
+ *O que é e em que momento da resolução da questão foi gerado o BYTECODE;*
+
+<h2>Resposta</h2>
+
+**Crie uma classe Java utilizando um editor qualquer**
+
+[Link para classe criada](Main.java)
+
 **O que você precisou para resolver esta questão?**
 
 Para criar a classe Main precisei das classes String e System, ambas presentes no
