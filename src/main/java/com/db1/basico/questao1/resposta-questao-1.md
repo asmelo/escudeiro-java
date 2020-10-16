@@ -14,7 +14,10 @@ popularização da Internet o Oak foi adaptado para a web e passou a se chamada 
 Por conta da sua motivação inicial o Java provê um alto grau de interabilidade
 dos usuários com os sistemas, é independente e portátil possibilitando assim ser
 executado em diversas plataformas. Além disso o Java é uma linguagem Open Source,
-orientada a objetos, tipada, interpretada, segura, simples e de alta performance.
+orientada a objetos, tipada, segura, simples e de alta performance. Java é uma 
+linguagem compilada e interpretada, primeiramente o código fonte é compilado pelo 
+"javac" que gera um código de nível intermediário chamado bytecode, este por sua 
+vez é interpretado pela JVM a fim de se executado.
 
 **Importância para o desenvolvimento de software**
 

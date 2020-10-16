@@ -43,5 +43,17 @@
  - [Algoritmo com os exemplos encapsulamento e modificadores de acesso (Arquivo 2)](modifiier_examples/service/ModifierExamples.java)
  
  - [Classe Auxiliar utilizada](modifiier_examples/service/Person.java) 
+ 
+ **Modificadores de Acesso**
+ 
+ No Java existem 4 modificadores de acesso: public, protected, default ou package (assumido quando não é declarando nenhum outro modificador)
+ e protected. Uma classe de nível superior pode usar apenas os modificadores public ou default, já as classes no nível
+ membro, as variáveis de instância e métodos podem utilizar todos os quatro modificadores. Declarando uma variável de
+ instância com o modificador public esta poderá ser acessada por qualquer outra classe. Declarando com o modificador private
+ esta poderá ser acessada apenas dentro da própria classe. Com o modificador default a variável poderá ser acessada apenas
+ por classes que estejam no mesmo pacote. Com o modificador protected a variável poderá ser acessada apenas por classes que
+ estejam no mesmo pacote ou através de herança ainda que a subclasse esteja em outro pacote. 
+ 
+  
 
 [Retornar ao Sumário](../../../../../../../README.md)
