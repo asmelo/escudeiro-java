@@ -78,7 +78,7 @@ método concatenarContatos, apenas dentro do laço do "for".
 Ao utilizar o modificar "final" na declaração de uma variável esta poderá receber um valor
 uma única vez. Deve ser usado sempre que uma variável não possa ter ser valor modificado, por
 exemplo ao declarar a variável PI podemos usar o modificador "final" uma vez que seu valor
-não altera.
+não altera. O final também pode ser utilizado em variáveis passadas como parâmetro em métodos.
 
 ```
 static final double PI = 3.141592653589793;

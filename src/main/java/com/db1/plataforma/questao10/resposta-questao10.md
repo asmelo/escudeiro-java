@@ -42,7 +42,9 @@
  
  - [Algoritmo com os exemplos encapsulamento e modificadores de acesso (Arquivo 2)](modifiier_examples/service/ModifierExamples.java)
  
- - [Classe Auxiliar utilizada](modifiier_examples/service/Person.java) 
+ - [Classe Auxiliar 1 utilizada](modifiier_examples/service/Person.java)
+ 
+ - [Classe Auxiliar 2 utilizada](modifiier_examples/service/SimpleMathFour.java)  
  
  **Modificadores de Acesso**
  

@@ -8,8 +8,8 @@ public class DefaultMethodsExamples {
 
     public static void main(String[] args) {
 
-        Vehicle bike = new Bike();
-        Vehicle car = new Car();
+        Vehicle bike = new Bike("Monark");
+        Vehicle car = new Car("Siena");
 
         car.accelerate();
         car.breakVehicle();

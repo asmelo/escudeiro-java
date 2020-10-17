@@ -44,14 +44,14 @@ class MainTest {
     @ValueSource(strings = {"a+(b*c)-2-a", "(a+b*(2-c)-2+a)*2"})
     public void should_validate_parentheses_position_successfully(String expression) {
         boolean valid = Main.validateParenthesesPositions(expression);
-        assertEquals(true, valid);
+        assertTrue(valid);
     }
 
     @ParameterizedTest
     @ValueSource(strings = {"(a*b-(2+c)", "2*(3-a))", ")3+b*(2-c)("})
     public void should_fail_in_validate_parentheses_position(String expression) {
         boolean valid = Main.validateParenthesesPositions(expression);
-        assertEquals(false, valid);
+        assertFalse(valid);
     }
 
     @Test

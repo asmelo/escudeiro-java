@@ -33,23 +33,23 @@ public class MainTest {
 
     @Test
     public void should_separate_even_values() {
-        List<Integer> evenList = new ArrayList<>();
-        List<Integer> oddList = new ArrayList<>();
+        List<Long> evenList = new ArrayList<>();
+        List<Long> oddList = new ArrayList<>();
 
         Main.separateEvenAndOdds(args, 10, evenList, oddList);
 
-        List<Integer> expectedEvenList = Arrays.asList(10, 6, 2, 0, 44);
+        List<Long> expectedEvenList = Arrays.asList(10l, 6l, 2l, 0l, 44l);
         assertEquals(expectedEvenList, evenList);
     }
 
     @Test
     public void should_separate_odd_values() {
-        List<Integer> evenList = new ArrayList<>();
-        List<Integer> oddList = new ArrayList<>();
+        List<Long> evenList = new ArrayList<>();
+        List<Long> oddList = new ArrayList<>();
 
         Main.separateEvenAndOdds(args, 10, evenList, oddList);
 
-        List<Integer> expectedOddList = Arrays.asList(9, 1, 17, 65, 79, 11);
+        List<Long> expectedOddList = Arrays.asList(9l, 1l, 17l, 65l, 79l, 11l);
         assertEquals(expectedOddList, oddList);
     }
 

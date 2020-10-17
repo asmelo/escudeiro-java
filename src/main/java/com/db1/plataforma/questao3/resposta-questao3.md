@@ -34,8 +34,9 @@ System.out.println(stringConcatenada); //Irá imprimir "Exemplo de concatenaçã
 ```
 
 - **Classe StringBuilder**: Internamente esta classe possui um array mutável
-de caracteres, ao inicializar a classe precisamos declarar o tamanho deste array, por conta
-disso o StringBuilder consegue concatenar String de forma bastante eficiente. Por exemplo:
+de caracteres. Ao inicializar a classe podemos declarar o tamanho deste array, 
+caso não seja declarado será atribuido por padrão o tamanho 16. Por trabalhar com o array 
+mutável o StringBuilder consegue concatenar String de forma bastante eficiente. Por exemplo:
 
 ```
 StringBuilder stringBuilder = new StringBuilder(10);

@@ -60,9 +60,9 @@ public class Main {
 
         int arrayLenght = Integer.valueOf(args[0]);
 
-        List<Integer> evenList = new ArrayList<>();
-        List<Integer> oddList = new ArrayList<>();
-        List<Integer> orderedList = new ArrayList<>();
+        List<Long> evenList = new ArrayList<>();
+        List<Long> oddList = new ArrayList<>();
+        List<Long> orderedList = new ArrayList<>();
 
         separateEvenAndOdds(args, arrayLenght, evenList, oddList);
 
@@ -75,15 +75,15 @@ public class Main {
         printInMultipleLines(orderedList);
     }
 
-    private static void printInMultipleLines(List<Integer> orderedList) {
-        for (Integer value : orderedList) {
+    private static void printInMultipleLines(List<Long> orderedList) {
+        for (Long value : orderedList) {
             System.out.println(value);
         }
     }
 
-    static void separateEvenAndOdds(String[] args, int arrayLenght, List<Integer> evenList, List<Integer> oddList) {
+    static void separateEvenAndOdds(String[] args, int arrayLenght, List<Long> evenList, List<Long> oddList) {
         for (int i = 0; i <= arrayLenght; i++) {
-            int value = Integer.valueOf(args[i]);
+            long value = Long.valueOf(args[i]);
 
             if (value % 2 == 0) {
                 evenList.add(value);
