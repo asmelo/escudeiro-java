@@ -14,15 +14,29 @@
 
 Problema 1 - Balanço de Parênteses
 
- - [Solução do problema do Balanço de Parênteses](balanco_de_parenteses/Main.java)
+ - [Classe Main](balanco_de_parenteses/Main.java)
  
- - [Testes da solução do Balanço de Parênteses](balanco_de_parenteses/MainTest.java)
+ - [Arquivo auxiliar 1](balanco_de_parenteses/domain/Expression.java)
+ 
+ - [Arquivo auxiliar 2](balanco_de_parenteses/service/ExpressionService.java)
+ 
+ - [Arquivo auxiliar 3](balanco_de_parenteses/service/FileService.java)
+ 
+ - [Testes do Main](balanco_de_parenteses/MainTest.java)
+ 
+ - [Testes do Arquivo 1](../../../../../test/java/com/db1/pratica/balanco_de_parenteses/domain/ExpressionTest.java)
+ 
+ - [Testes dos Arquivo 2 e 3](../../../../../test/java/com/db1/pratica/balanco_de_parenteses/service/ExpressionServiceTest.java) 
  
 Problema 2 - Pares e Ímpares
 
- - [Solução do problema dos Pares e Ímpares](pares_e_impares/Main.java)
+ - [Classe Main](pares_e_impares/Main.java)
  
- - [Testes da solução dos Pares e Ímpares](pares_e_impares/MainTest.java)
+ - [Arquivo auxiliar](pares_e_impares/domain/Numbers.java)
+ 
+ - [Teste do Main](pares_e_impares/MainTest.java)
+ 
+ - [Teste do Arquivo auxiliar](../../../../../test/java/com/db1/pratica/pares_e_impares/NumbersTest.java)
  
    
 

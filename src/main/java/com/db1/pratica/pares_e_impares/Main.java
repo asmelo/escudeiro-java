@@ -1,8 +1,8 @@
 package com.db1.pratica.pares_e_impares;
 
+import com.db1.pratica.pares_e_impares.domain.Numbers;
+
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -53,44 +53,13 @@ public class Main {
      */
 
     public static void main(String[] args) throws IOException {
-        if (args.length <= 0) {
-            System.out.println("Entrada vazia");
-            return;
-        }
+        //Exemplo de entrada: 10 4 32 34 543 3456 654 567 87 9999999999 98
+        Numbers numbers = new Numbers(args);
 
-        int arrayLenght = Integer.valueOf(args[0]);
+        List<Long> orderedList = numbers.getSpecialOrder();
 
-        List<Long> evenList = new ArrayList<>();
-        List<Long> oddList = new ArrayList<>();
-        List<Long> orderedList = new ArrayList<>();
-
-        separateEvenAndOdds(args, arrayLenght, evenList, oddList);
-
-        Collections.sort(evenList);
-        Collections.sort(oddList, Collections.reverseOrder());
-
-        orderedList.addAll(evenList);
-        orderedList.addAll(oddList);
-
-        printInMultipleLines(orderedList);
-    }
-
-    private static void printInMultipleLines(List<Long> orderedList) {
         for (Long value : orderedList) {
             System.out.println(value);
-        }
-    }
-
-    static void separateEvenAndOdds(String[] args, int arrayLenght, List<Long> evenList, List<Long> oddList) {
-        for (int i = 0; i <= arrayLenght; i++) {
-            long value = Long.valueOf(args[i]);
-
-            if (value % 2 == 0) {
-                evenList.add(value);
-                continue;
-            }
-
-            oddList.add(value);
         }
     }
 

@@ -1,5 +1,7 @@
 package com.db1.pratica.balanco_de_parenteses;
 
+import com.db1.pratica.balanco_de_parenteses.service.ExpressionService;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -46,68 +48,10 @@ public class Main {
      */
 
     public static void main(String[] args) throws IOException {
-        /*
-        A judge solicita que a aplicação receba como parâmetro N expressões, contudo a fim de facilitar para banca de avaliação
-        do Mestre dos Códigos a condicional abaixo cria exemplos de parâmetros de entrada caso estes não existam. Bastando apenas
-        executar a aplicação para poder visualizar os resultados.
-        */
-        if (args.length == 0) {
-            String[] expressions = {"a+(b*c)-2-a", "(a+b*(2-c)-2+a)*2", "(a*b-(2+c)", "2*(3-a))", ")3+b*(2-c)("};
-            validateParenthesesPositions(expressions);
-            return;
-        }
+        //Exemplo de parâmetros de entrada: a+(b*c)-2-a (a+b*(2-c)-2+a)*2 (a*b-(2+c) 2*(3-a)) )3+b*(2-c)(
 
-        validateParenthesesPositions(args);
-    }
-
-    static void validateParenthesesPositions(String[] expressions) throws IOException {
-        FileWriter fileWriter = createFile("resultado.txt");
-
-        for (String expression : expressions) {
-            boolean validExpression = validateParenthesesPositions(expression);
-
-            if (validExpression) {
-                printAndWriteInFile(fileWriter, "correct");
-                continue;
-            }
-
-            printAndWriteInFile(fileWriter, "incorrect");
-        }
-
-        fileWriter.close();
-    }
-
-    private static void printAndWriteInFile(FileWriter fileWriter, String value) throws IOException {
-        fileWriter.write(value);
-        System.out.println(value);
-    }
-
-    static FileWriter createFile(String fileName) throws IOException {
-        File file = new File(fileName);
-        file.createNewFile();
-        return new FileWriter(file);
-    }
-
-    static boolean validateParenthesesPositions(String expression) {
-        int openParentheses = 0;
-
-        String[] characters = expression.split("");
-
-        for (String character : characters) {
-            if (character.equals(")")) {
-                if (openParentheses > 0) {
-                    openParentheses--;
-                    continue;
-                }
-                return false;
-            }
-
-            if (character.equals("(")) {
-                openParentheses++;
-            }
-        }
-
-        return openParentheses == 0;
+        ExpressionService expressionService = new ExpressionService(args);
+        expressionService.createFileWithValidations("resultado.txt");
     }
 
 }
