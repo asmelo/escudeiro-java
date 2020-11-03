@@ -8,8 +8,8 @@ public class PolimorfismExample {
 
     public static void main(String[] args) {
 
-        Vehicle vehicleOne = new Bike();
-        Vehicle vehicleTwo = new Car();
+        Vehicle vehicleOne = new Bike("Monark");
+        Vehicle vehicleTwo = new Car("Siena");
 
         //Ao executar o método accelerate percebemos que apresenta resultados diferentes. Por conta do polimorfismo do Java é possível
         //implementar o mesmo método declarado na interface de formas diferentes. Todos os veículos precisam implementar o mesmo

@@ -8,7 +8,7 @@ public class ModifierExamples {
         Person paulo = new Person("Paulo", 45, "Desenvolvedor");
         System.out.println("Os dados de Paulo são: " + paulo);
 
-        //Como a variável name possui o modificador protected ela não pode ser acessada diretamente por esta classe pois
+        //Como a variável name possui o modificador default (ou package) ela não pode ser acessada diretamente por esta classe pois
         //não pertence ao mesmo pacote, por isso acessamos o name através do método getName.
         //O atributo species possui o modificador public portanto é possível acessá-la diretamente
         System.out.println(String.format("A espécie de %s é %s ", paulo.getName(), paulo.species));

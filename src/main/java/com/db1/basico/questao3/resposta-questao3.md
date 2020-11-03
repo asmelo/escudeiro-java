@@ -27,7 +27,7 @@ javac Main.java
 
 **O comando que você usou para executar**
 
-java com.db1.basico.questao3.Main
+java Main
 
 **Qual é a estrutura miníma de uma classe Java**
 ```

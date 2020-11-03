@@ -42,6 +42,7 @@ class BigDecimalArithmeticOpsTest {
                 "Total arredondando para duas casas decimais: 336.92\n" +
                 "Valor da parcela: 112.31"
 ;
+        //Na asserção abaixo o trim() é necessário para remover a última quebra de linha criada pelo método System.out.println
         assertEquals(expected, byteArrayOutputStream.toString().trim());
     }
 

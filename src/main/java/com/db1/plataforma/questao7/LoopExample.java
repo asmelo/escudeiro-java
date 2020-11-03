@@ -38,7 +38,7 @@ public class LoopExample {
         int count = 0;
         Integer value = numbers.get(count);
         System.out.println();
-        while (value < 5 && count < numbers.size()) {
+        while (value < 5) {
             System.out.println("Valor menor que 5 encontrado: " + numbers.get(count));
             value = numbers.get(++count);
         }

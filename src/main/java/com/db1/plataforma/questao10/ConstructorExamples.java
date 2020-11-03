@@ -1,5 +1,7 @@
 package com.db1.plataforma.questao10;
 
+import com.db1.plataforma.questao10.modifiier_examples.service.SimpleMathFour;
+
 public class ConstructorExamples {
 
     public static void main(String[] args) {
@@ -26,10 +28,15 @@ public class ConstructorExamples {
         SimpleMathThree fourValuesInstance = new SimpleMathThree(3, 5, 7, 2);
         sum = fourValuesInstance.addValues();
         System.out.println("A soma de 3, 5, 7 e 2 é " + sum);
+
+        //A classe SimpleMathFour possui o construtor privado portanto não pode ser instanciada
+        //"SimpleMathFour simpleMathFour = new SimpleMathFour();" irá gerar um erro de compilação.
     }
 
     public static class SimpleMathOne {
-        //Contrutor padrão
+        //Construtor padrão
+        //Não é necessária a declaração explicita do construtor padrão pois o java já o cria por padrão para todas as
+        //classes caso não exista um construtor declarado.
         public SimpleMathOne() {
         }
 
